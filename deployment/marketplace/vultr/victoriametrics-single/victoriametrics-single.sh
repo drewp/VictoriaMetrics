@@ -38,4 +38,6 @@ systemctl enable vmsingle.service
 ################################################
 ## Prepare server for Marketplace snapshot
 
+cloud-init clean
+
 clean_system
