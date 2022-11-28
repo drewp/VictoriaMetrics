@@ -219,6 +219,11 @@ github.com/go-kit/log/level
 # github.com/go-logfmt/logfmt v0.5.1
 ## explicit; go 1.17
 github.com/go-logfmt/logfmt
+# github.com/gogo/protobuf v1.3.2
+## explicit; go 1.15
+github.com/gogo/protobuf/gogoproto
+github.com/gogo/protobuf/proto
+github.com/gogo/protobuf/protoc-gen-gogo/descriptor
 # github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
 ## explicit
 github.com/golang/groupcache/lru
@@ -262,6 +267,9 @@ github.com/influxdata/influxdb/pkg/escape
 # github.com/jmespath/go-jmespath v0.4.0
 ## explicit; go 1.14
 github.com/jmespath/go-jmespath
+# github.com/json-iterator/go v1.1.12
+## explicit; go 1.12
+github.com/json-iterator/go
 # github.com/klauspost/compress v1.15.12
 ## explicit; go 1.17
 github.com/klauspost/compress
@@ -287,6 +295,12 @@ github.com/mattn/go-runewidth
 # github.com/matttproud/golang_protobuf_extensions v1.0.4
 ## explicit; go 1.9
 github.com/matttproud/golang_protobuf_extensions/pbutil
+# github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+## explicit
+github.com/modern-go/concurrent
+# github.com/modern-go/reflect2 v1.0.2
+## explicit; go 1.12
+github.com/modern-go/reflect2
 # github.com/oklog/ulid v1.3.1
 ## explicit
 github.com/oklog/ulid
@@ -458,8 +472,9 @@ google.golang.org/appengine/internal/socket
 google.golang.org/appengine/internal/urlfetch
 google.golang.org/appengine/socket
 google.golang.org/appengine/urlfetch
-# google.golang.org/genproto v0.0.0-20221109142239-94d6d90a7d66
+# google.golang.org/genproto v0.0.0-20221118155620-16455021b5e6
 ## explicit; go 1.19
+google.golang.org/genproto/googleapis/api
 google.golang.org/genproto/googleapis/api/annotations
 google.golang.org/genproto/googleapis/iam/v1
 google.golang.org/genproto/googleapis/rpc/code
@@ -468,7 +483,7 @@ google.golang.org/genproto/googleapis/rpc/status
 google.golang.org/genproto/googleapis/type/date
 google.golang.org/genproto/googleapis/type/expr
 google.golang.org/genproto/protobuf/field_mask
-# google.golang.org/grpc v1.50.1
+# google.golang.org/grpc v1.51.0
 ## explicit; go 1.17
 google.golang.org/grpc
 google.golang.org/grpc/attributes
