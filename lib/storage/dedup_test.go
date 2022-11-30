@@ -41,9 +41,7 @@ func TestDeduplicateSamples(t *testing.T) {
 	f := func(scrapeInterval time.Duration, timestamps, timestampsExpected []int64, values, valuesExpected []float64) {
 		t.Helper()
 		timestampsCopy := make([]int64, len(timestamps))
-		for i, ts := range timestamps {
-			timestampsCopy[i] = ts
-		}
+		copy(timestampsCopy, timestamps)
 		dedupInterval := scrapeInterval.Milliseconds()
 		timestampsCopy, values = DeduplicateSamples(timestampsCopy, values, dedupInterval)
 		if !reflect.DeepEqual(timestampsCopy, timestampsExpected) {
